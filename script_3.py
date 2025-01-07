@@ -8,7 +8,7 @@ with open('output_301.js', 'w') as file:
     while True:
         try:
             temp = Gregorian(date.year, date.month, date.day)
-            file.write(f"""'{temp.isoformat()}' : '{temp.to_hijri().isoformat()}',\n""")
+            file.write(f"""    '{temp.isoformat()}' : '{temp.to_hijri().isoformat()}',\n""")
             date = date + timedelta(days=1)
         except:
             file.write('}')
