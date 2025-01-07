@@ -19,5 +19,5 @@ while True:
         break
 
 
-with open('calendar.json', 'w') as file:
-    json.dump(calendar, file, separators=(',', ':'))
+with open('output_1.js', 'w') as file:
+    file.write('const calendar = ' + json.dumps(calendar, separators=(',', ':')))
