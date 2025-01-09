@@ -3,7 +3,7 @@ from datetime import *
 
 
 with open('calendar.js', 'w') as file:
-    file.write('const calendar = {\n')
+    file.write('const CALENDAR = {\n')
     date = datetime(1924, 8, 1)
     while True:
         try:
