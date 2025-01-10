@@ -1,7 +1,7 @@
 function main() {
     let p = document.createElement('p')
     try {p.textContent = formatDate(CALENDAR[document.querySelector('input').value])}
-    catch {p.textContent = '💀 date out of range 💀'}
+    catch {p.textContent = '💀 out of range 💀'}
     finally {document.querySelector('p').replaceWith(p)}
 }
 

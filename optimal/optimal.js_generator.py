@@ -21,4 +21,4 @@ while True:
 
 calendar = re.sub(r'["\'](\w+)["\']\s*:', r'\1:', dumps(calendar, separators=(',', ':')))
 with open('optimal.js', 'w') as file:
-    file.write(f'const calendar={calendar}')
+    file.write(f'const CALENDAR={calendar}')
